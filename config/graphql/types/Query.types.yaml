@@ -1,0 +1,19 @@
+Query:
+    type: object
+    config:
+        description: "Main Query"
+        fields:
+            product:
+                type: "Product"
+                args:
+                    id:
+                        description: "Get product by ID"
+                        type: "Int"
+                resolve: "@=query('Product', args['id'])"
+            products_collection:
+                type: "ProductCollection"
+                args:
+                    CategoryID:
+                        description: "Get product by CategoryID"
+                        type: "Int"
+                resolve: "@=query('ProductList', args['CategoryID'])"

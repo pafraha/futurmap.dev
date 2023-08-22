@@ -1,0 +1,11 @@
+Category:
+    type: object
+    config:
+        description: "Category Type"
+        fields:
+            id:
+                type: "Int"
+                description: "Category ID"
+            name:
+                type: "String"
+                description: "Category Name"
